@@ -1,7 +1,0 @@
-# uno
-
-# Installation 
-
-# Basic usage
-
-
