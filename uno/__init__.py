@@ -1,4 +1,4 @@
 
-from uno.uno import uno_script
+from uno.uno_script import uno_script
 
 
