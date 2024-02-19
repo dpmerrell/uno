@@ -1,16 +1,13 @@
 
 from random import shuffle
-
-
-
-def generate_deck(n_decks=1):
-
+import uno.util as uu
 
 
 class UnoDeck:
 
     def __init__(self, n_decks=1):
-        self.draw_pile = generate_deck(n_decks=n_decks)
+        self.draw_pile = build_deck(n_decks=n_decks)
+        shuffle(self.draw_pile)
         self.discard_pile = [self.draw_pile.pop()]
 
     def draw(self):

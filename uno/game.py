@@ -19,11 +19,7 @@ class UnoGame:
             # and submits an action to the game
             card = self.cur_player.choose_action(self)
 
-            # Game validates player's action
-            # (and throws an error if not valid);
-            self.validate_action(card)
-
-            # The game updates its state 
+            # The game updates its state based on the card 
             self.update_state(card)
 
         return
